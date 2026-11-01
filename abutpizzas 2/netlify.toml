@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# O Nitro detecta a Netlify sozinho (preset `netlify`) e grava em `dist/`
+# o servidor (Netlify Function) e o `_redirects` de fallback.
+# Não adicione um redirect curinga manual aqui: ele brigaria com o do Nitro.
